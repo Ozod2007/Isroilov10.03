@@ -57,3 +57,21 @@ for f in a:
 print(c)
 ```
 **Ответ**: 2101
+
+# Тип 8 № 59801
+## Задание 5 ##
+___
+```
+a = {0: "К", 1: "О", 2: "Н", 3: "Ф", 4: "Е", 5: "Т", 6: "А"}
+count = 0
+for i in range(0, len(a)):
+    for j in range(0, len(a)):
+        for g in range(0, len(a)):
+            for m in range(0, len(a)):
+                for n in range(0, len(a)):
+                    s = a[i] + a[j] + a[g] + a[m] + a[n]
+                    if a[j] != 'Ф' and s.count('Е') == 2:
+                        count += 1
+print(count)
+```
+**Ответ**: 1944
